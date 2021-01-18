@@ -1,0 +1,21 @@
+frontend1.0643.internal
+appdb1.0643.internal
+app1.0643.internal
+support1.0643.internal
+app2.0643.internal
+[lb]
+frontend1.0643.internal
+
+[webservers]
+app1.0643.internal
+app2.0643.internal 
+
+[db]
+appdb1.0643.internal
+
+[mailserver]
+support1.0643.internal
+
+[all:vars]
+ansible_user = devops
+ansible_ssh_private_key_file = /home/devops/.ssh/id_rsa
